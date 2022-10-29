@@ -11,9 +11,18 @@ public class Program {
 		 * UM VETOR ARMAZENA UMA SEQUÊNCIA DE VALORES ONDE TODOS SÃO DO MESMO TIPO;
 		 */
 		
-		Vetor vetor = new Vetor(5);
+		Vetor vetor = new Vetor(2);
 		
-		vetor.adiciona("elemento 1");
+		try {
+			vetor.adiciona("elemento 1");
+			vetor.adiciona("elemento 2");
+			vetor.adiciona("elemento 3");
+			
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		
 		
 	
 	}
