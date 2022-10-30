@@ -1,9 +1,7 @@
 package entities;
 
-import java.util.Arrays;
-
 public class Vetor {
-
+	
 	private String[] elementos;
 	private int tamanho;
 
@@ -53,6 +51,23 @@ public class Vetor {
 		
 	}
 	
+	/*
+	 * VAMOS FAZER UM ALGORITMO DE BUSCA
+	 * O MAIS SIMPLES É O ALGORTIMO DE BUSCA SEQUENCIAL.
+	 */
+	public boolean elementoExiste (String elemento) {
+		for(int i =0; i < this.tamanho; i++) {
+			if(this.elementos[i].equals(elemento)) {
+				return true;
+			}
+			
+		}
+		return false;
+			
+	}
+	
+
+	
 	public int tamanho() {
 		return this.tamanho;
 	}
@@ -76,5 +91,4 @@ public class Vetor {
 		
 		return s.toString();
 	}
-
 }
