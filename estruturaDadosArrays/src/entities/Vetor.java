@@ -105,8 +105,7 @@ public class Vetor {
 	//vetor[3] = vetor[4]
 	public void removeElemento(int posicao) {
 		if(!(posicao >= 0 && posicao < tamanho)) {
-			throw new IllegalArgumentException("POSIÇÃO INVÁLIDA!");
-			
+			throw new IllegalArgumentException("POSIÇÃO INVÁLIDA!");			
 		}
 		for(int i = posicao; i < this.tamanho-1; i++){
 			this.elementos[i] = this.elementos[i+1];				
